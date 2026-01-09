@@ -142,5 +142,29 @@ describe("Array Manipulation", () => {
 
       expect(greatestDivisibleSum).equal(9);
     });
+
+    it("Returns 15 according to the input [4, 10, 5]", () => {
+      greatestDivisibleSum = getLeetcodeResult("GREATEST_SUM_DIVISIBLEBY_3", {
+        nums: [4, 10, 5],
+      });
+
+      expect(greatestDivisibleSum).equal(15);
+    });
+
+    it("Returns 39 according to the input [6, 12, 20, 1]", () => {
+      greatestDivisibleSum = getLeetcodeResult("GREATEST_SUM_DIVISIBLEBY_3", {
+        nums: [6, 12, 20, 1],
+      });
+
+      expect(greatestDivisibleSum).equal(39);
+    });
+
+    it("Returns 60 according to the input [4, 10, 5, 20, 21]", () => {
+      greatestDivisibleSum = getLeetcodeResult("GREATEST_SUM_DIVISIBLEBY_3", {
+        nums: [4, 10, 5, 20, 21],
+      });
+
+      expect(greatestDivisibleSum).equal(60);
+    });
   });
 });

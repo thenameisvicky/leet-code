@@ -17,7 +17,7 @@ export class GreatestSumDivisibleBy3Strategy
 {
   function(params: { nums: Array<number> }): number {
     const { nums } = params;
-    const sum = nums.reduce((acc, num) => acc + num);
+    const sum = nums.reduce((acc, num) => acc + num, 0);
 
     if (sum % 3 === 0) return sum;
 
