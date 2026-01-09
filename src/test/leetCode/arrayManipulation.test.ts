@@ -123,4 +123,24 @@ describe("Array Manipulation", () => {
       expect(isOneBitCharacter).equal(true);
     });
   });
+
+  describe("1262. Greatest Sum Divisible by Three", () => {
+    let greatestDivisibleSum;
+
+    it("Returns 18 according to the input [3,6,5,1,8]", () => {
+      greatestDivisibleSum = getLeetcodeResult("GREATEST_SUM_DIVISIBLEBY_3", {
+        nums: [3, 6, 5, 1, 8],
+      });
+
+      expect(greatestDivisibleSum).equal(18);
+    });
+
+    it("Returns 9 according to the input [4, 4, 5]", () => {
+      greatestDivisibleSum = getLeetcodeResult("GREATEST_SUM_DIVISIBLEBY_3", {
+        nums: [4, 4, 5],
+      });
+
+      expect(greatestDivisibleSum).equal(9);
+    });
+  });
 });

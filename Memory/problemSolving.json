@@ -1,5 +1,5 @@
 {
-    "currentLevel": "Intermediate to Advanced (strong in arrays, strings, binary search, sliding window, hash map, subarray problems; consistently improving with 25 problems solved; recently refactored all strategies to unified pattern)",
+    "currentLevel": "Intermediate to Advanced (strong in arrays, strings, binary search, sliding window, hash map, subarray problems; consistently improving with 27 problems solved; recently refactored all strategies to unified pattern)",
     "areasOfImprovement": [
       "Expand to more problem types (graphs, trees, dynamic programming, advanced data structures)",
       "Participate in coding contests for speed and breadth",
@@ -9,7 +9,7 @@
     ],
     "lastSolvedStrategyDate": "2025-01-27",
     "recentAchievements": [
-      "Refactored all 25 LeetCode strategies to unified LeetcodeStrategy<T, K> pattern",
+      "Refactored all 27 LeetCode strategies to unified LeetcodeStrategy<T, K> pattern",
       "Implemented centralized strategy executor with getLeetcodeResult() function",
       "All strategies now follow consistent interface and execution pattern"
     ],
@@ -173,6 +173,20 @@
         "file": "permutations.ts",
         "approach": "Iterative Next-Permutation Generation",
         "description": "Generates all permutations of an array using iterative next-permutation algorithm. Calculates total permutations (n!) and generates each permutation by repeatedly applying next-permutation logic. Returns all unique permutations. Time complexity O(n! * n), space O(n! * n).",
+        "recentlyAdded": true
+      },
+      {
+        "name": "1-bit and 2-bit Characters (LeetCode 717)",
+        "file": "isOneBitCharacter.ts",
+        "approach": "Greedy Decoding with Conditional Step",
+        "description": "Determines if the last character in a binary array must be a one-bit character by decoding from left to right. If current bit is 1, skip next bit (two-bit character); if 0, process as one-bit. Returns true if final position indicates one-bit character. Time complexity O(n), space O(1).",
+        "recentlyAdded": true
+      },
+      {
+        "name": "Number of Substrings With Only 1s (LeetCode 1513)",
+        "file": "numberOfSubstringsWith1s.ts",
+        "approach": "Sliding Window with Consecutive 1s Counting",
+        "description": "Counts all substrings containing only 1s by maintaining a streak counter. For each consecutive 1, adds the current streak length to the total count (representing all substrings ending at that position). Returns count modulo 10^9 + 7. Time complexity O(n), space O(1).",
         "recentlyAdded": true
       }
     ]

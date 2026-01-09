@@ -11,5 +11,37 @@ describe("String Manipulation", () => {
       );
       expect(numberOfSubstringsWith1s).equal(9);
     });
+
+    it("Returns 0 for string with no 1s '0000'", () => {
+      numberOfSubstringsWith1s = getLeetcodeResult(
+        "NUMBER_OF_SUBSTRINGS_ONES",
+        { s: "0000" }
+      );
+      expect(numberOfSubstringsWith1s).equal(0);
+    });
+
+    it("Returns 6 for string with all 1s '111' (1, 1, 1, 11, 11, 111)", () => {
+      numberOfSubstringsWith1s = getLeetcodeResult(
+        "NUMBER_OF_SUBSTRINGS_ONES",
+        { s: "111" }
+      );
+      expect(numberOfSubstringsWith1s).equal(6);
+    });
+
+    it("Returns 1 for single character '1'", () => {
+      numberOfSubstringsWith1s = getLeetcodeResult(
+        "NUMBER_OF_SUBSTRINGS_ONES",
+        { s: "1" }
+      );
+      expect(numberOfSubstringsWith1s).equal(1);
+    });
+
+    it("Returns 2 for alternating pattern '11' (1, 1)", () => {
+      numberOfSubstringsWith1s = getLeetcodeResult(
+        "NUMBER_OF_SUBSTRINGS_ONES",
+        { s: "101" }
+      );
+      expect(numberOfSubstringsWith1s).equal(2);
+    });
   });
 });

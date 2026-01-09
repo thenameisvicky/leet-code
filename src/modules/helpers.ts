@@ -25,6 +25,7 @@ import { MinimumSizeSubarraySumStrategy } from "./leetCode/slidingWindow/minSize
 import { LongestSubStrWithNoRepeatCharStrategy } from "./leetCode/slidingWindow/longSubStringNoDup";
 import { NumberOfSubstringsWithOnly1s } from "./leetCode/stringManipulation/numberOfSubstringsWith1s";
 import { IsOneBitCharacterStrategy } from "./leetCode/arrayManipulation/isOneBitCharacter";
+import { GreatestSumDivisibleBy3Strategy } from "./leetCode/arrayManipulation/greatestSumDivisibleBy3";
 
 // Interfaces
 export interface LeetcodeStrategy<T, K> {
@@ -43,6 +44,7 @@ export class StrategyExecutor {
     BEST_TIME_TO_BUY_AND_SELL_STOCK: new BestTimeToBuyAndSellStockStrategy(),
     PERMUTATIONS: new PermutationsStrategy(),
     CONSECUTIVE_ODDS: new ConsecutiveOddsStrategy(),
+    GREATEST_SUM_DIVISIBLEBY_3: new GreatestSumDivisibleBy3Strategy(),
 
     // HashMap
     TWO_SUM_1: new TwoSumStrategy1(),
